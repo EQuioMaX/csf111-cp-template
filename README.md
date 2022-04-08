@@ -4,7 +4,7 @@
 
 ## Changes to the docker-compose configuration
 - Added the library headers and archive to the docker image itself (used in Data/docker-compose.yml)
-  - Image is available to pull at https://hub.docker.com/r/f20180196/csf111-cp
+  - Image is available to pull at https://hub.docker.com/r/cedrbitsg/csf111-cp
   - Docker command to pull image: `docker pull cedrbitsg/csf111-cp:0.1.1`
   - Headers available at `/usr/include/cp`
   - Library available at `/usr/lib`
