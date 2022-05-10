@@ -11,7 +11,7 @@ endif
 ERRORS = errors.txt
 OUTPUT = output.txt
 
-PROG = lab02
+PROG = lab_xy
 MAIN = main
 LIB = cp
 
