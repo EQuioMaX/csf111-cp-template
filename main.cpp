@@ -6,6 +6,7 @@ int main() {
   cp::println(false);
   cp::println();
   cp::println(3.14);
+  cp::check(false);
   //Changed docker-compose.yml
   return 0;
 }

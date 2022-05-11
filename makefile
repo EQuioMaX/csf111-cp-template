@@ -8,7 +8,8 @@ ifeq ($(CXX), clang++)
 LDFLAGS := -fuse-ld=lld
 endif
 
-ERRORS = errors.txt
+CT_ERR = compile_errors.txt
+RT_ERR = runtime_errors.txt
 OUTPUT = output.txt
 
 PROG = lab_xy
@@ -16,10 +17,10 @@ MAIN = main
 LIB = cp
 
 run: $(PROG)		
-	./$(PROG) > $(OUTPUT)
+	./$(PROG) > $(OUTPUT) 2> $(RT_ERR)
 
 $(PROG): $(MAIN).cpp
-	$(CXX) $(MAIN).cpp $(CXXFLAGS) $(LDFLAGS) -l$(LIB) -o $(PROG) > $(ERRORS) 2>&1
+	$(CXX) $(MAIN).cpp $(CXXFLAGS) $(LDFLAGS) -l$(LIB) -o $(PROG) > $(CT_ERR) 2>&1
 
 
 clean: 
