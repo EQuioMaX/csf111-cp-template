@@ -1,5 +1,0 @@
-My first program.
-42
-false
-
-3.14
